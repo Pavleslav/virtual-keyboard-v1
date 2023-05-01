@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    transition: .2s;
+    background-color: rgb(54,54,54);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.keyboard_wrapp {
+    max-width: 985px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    order: 2;
+    background-color: #585858;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+}
+
+.keys {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    z-index: 5;
+    background-color: #3c3c3c;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.backspace_key {
+    width: 120px;
+}
+.del_key{
+    width: 90px; 
+}
+
+.tab_key {
+    width: 90px;
+}
+
+.slash_key {
+    width: 60px;
+}
+
+.caps_lock_key {
+    width: 128px;
+}
+
+.enter_key {
+    width: 120px;
+}
+
+.shift_left {
+    width: 160px;
+}
+
+.space_key {
+    max-width: 432px;
+    width: 100%;
+}
+
+.text {
+    max-width: 985px;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    padding-left: 10px;
+    transition: .2s;
+    background-color: #2b2b2b;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.caps_lock_key.active{
+    background-color: #c24848;
+    color: #fff; 
+}
+
+.keys.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.keys.remove {
+    animation: keys_animation 0.4s forwards ;
+}
+
+@keyframes keys_animation {
+    0% {
+        background-color: #333;
+        color: #fff;
+    }
+    50% {
+        background-color: #6d6c6c;
+        color: #2c2a2a;
+    }
+    100% {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+.change_light_color {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.keyboard_lights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
